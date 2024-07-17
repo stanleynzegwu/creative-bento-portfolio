@@ -1,6 +1,16 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
+
+  @layer base {
+    * {
+      @apply border-border;
+      box-sizing: border-box
+    }
+    body {
+      @apply bg-background text-foreground;
+    }
+  }
 
   @layer base {
     :root {
@@ -59,14 +69,6 @@
     }
   }
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-  }
 
 
 @layer components {
@@ -76,4 +78,20 @@
   }
 
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255 , 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 

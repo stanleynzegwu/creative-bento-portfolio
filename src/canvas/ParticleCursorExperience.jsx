@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
-import Exp from "./Exp";
+import ParticleCursorAnimation from "./ParticleCursorAnimation";
 
-const MainExp = ({ image }) => {
+const ParticleCursorExperience = ({ image }) => {
   return (
     <Canvas
       camera={{
@@ -13,9 +13,9 @@ const MainExp = ({ image }) => {
     >
       {/* <color attach="background" args={["#181818"]} /> */}
       <color attach="background" args={["#000000"]} />
-      <Exp image={image} />
+      <ParticleCursorAnimation image={image} />
     </Canvas>
   );
 };
 
-export default MainExp;
+export default ParticleCursorExperience;

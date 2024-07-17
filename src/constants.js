@@ -11,8 +11,9 @@ export const BENTO_DATA = [
       sub: "interface features",
       date: "2023",
     },
+
     {
-      video: "/video/video3.mp4",
+      img: "/images/notes1.png",
       header: "Apple",
       sub: "Notes",
       date: "2023",
@@ -37,8 +38,8 @@ export const BENTO_DATA = [
     },
     {
       video: "/video/video3.mp4",
-      header: "Apple",
-      sub: "Notes",
+      header: "GoodNotes",
+      sub: "tags and reminders",
       date: "2023",
     },
     {

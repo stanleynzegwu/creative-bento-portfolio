@@ -1,5 +1,18 @@
 const Topbar = () => {
-  return <nav className="md:hidden fixed top-0 left-0 w-full h-16 bg-white  z-50">nav</nav>;
+  return (
+    <nav className="md:hidden fixed inset-0 h-16 p-6 md:p-8 lg:p-12 flex justify-between items-center glassmorphism z-10">
+      <div className="bg-gray-200 rounded-sm font-extrabold w-20 h-10 flex justify-center items-center cursor-pointer">
+        <a href="/">LOGO</a>
+      </div>
+      <ul className="flex gap-4">
+        {["about", "ideas", "CV"].map((item, index) => (
+          <li className="capitalize text-lg font-semibold" key={index}>
+            <a href={`/${item}`}>{item}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 };
 
 export default Topbar;

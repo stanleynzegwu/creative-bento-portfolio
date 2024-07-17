@@ -3,12 +3,14 @@ import BentoGrid from "../components/BentoGrid";
 import LeftSidebar from "../components/LeftSidebar";
 import Scroll from "../components/Scroll";
 import Wrapper from "@/components/Wrapper";
+import Topbar from "@/components/Topbar";
 
 const Home = () => {
   return (
     <div className="flex">
       <LeftSidebar />
-      <div className="w-full max-h-screen min-h-screen overflow-x-hidden overflow-y-auto relative">
+      <div className=" w-full md:max-h-screen min-h-screen overflow-x-hidden overflow-y-auto relative">
+        {/* <Topbar /> */}
         <div className="p-8 lg:p-12">
           <span className="inline-block pb-6 text-xl font-semibold text-gray-400">
             Hello there👋

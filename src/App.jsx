@@ -5,7 +5,7 @@ import Topbar from "./components/Topbar";
 
 function App() {
   return (
-    <main className="">
+    <main className="max-md:mt-16">
       <Topbar />
       {/* Defining routes path and rendering components as element */}
       <Routes>
