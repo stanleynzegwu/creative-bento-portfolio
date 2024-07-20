@@ -1,5 +1,5 @@
 const About = () => {
-  return <div>about</div>;
+  return <div className="p-8 lg:p-12 py-10">about</div>;
 };
 
 export default About;

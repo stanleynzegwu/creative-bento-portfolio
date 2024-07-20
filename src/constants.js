@@ -43,7 +43,8 @@ export const BENTO_DATA = [
       date: "2023",
     },
     {
-      texture: "/textures/picture-2.png",
+      texture: "/textures/picture-4.png",
+      cameraPosition: [0, 0, 6],
       header: "Apple",
       sub: "Notes",
       date: "2023",
@@ -86,3 +87,78 @@ export const INTERDISCIPLINARY_DATA = [
     imgPath:'/images/100devs.jpeg'
   },
 ]
+
+export const IDEA_DATA = [
+  {
+    model: "/models/model.glb",
+    video: "/video/video3.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+  {
+    model: "/models/clientModel5.glb",
+    video: "/video/video1.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+  {
+    model: "/models/clientModel5.glb",
+    video: "/video/video1.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+  {
+    model: "/models/model.glb",
+    video: "/video/video3.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+  {
+    model: "/models/model.glb",
+    video: "/video/video3.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+  {
+    model: "/models/model.glb",
+    video: "/video/video3.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+  {
+    model: "/models/model.glb",
+    video: "/video/video3.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+  {
+    model: "/models/clientModel5.glb",
+    video: "/video/video3.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+  {
+    model: "/models/model.glb",
+    video: "/video/video3.mp4",
+    cameraPosition: [0, 0, 6],
+    header: "Apple",
+    sub: "Notes",
+    date: "2023",
+  },
+];

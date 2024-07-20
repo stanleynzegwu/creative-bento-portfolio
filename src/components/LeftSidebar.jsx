@@ -19,7 +19,7 @@ const LeftSidebar = () => {
       <div>
         <div className="p-6 py-10 flex flex-col gap-2">
           <div className="bg-gray-200 rounded-sm font-extrabold w-20 h-10 flex justify-center items-center">
-            LOGO
+            <a href="/">LOGO</a>
           </div>
           {["about", "ideas", "CV"].map((item, index) => (
             <span className="capitalize text-xl font-semibold" key={index}>
