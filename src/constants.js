@@ -96,6 +96,7 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
   {
     model: "/models/clientModel5.glb",
@@ -104,6 +105,7 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
   {
     model: "/models/clientModel5.glb",
@@ -112,6 +114,7 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
   {
     model: "/models/model.glb",
@@ -120,6 +123,7 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
   {
     model: "/models/model.glb",
@@ -128,6 +132,7 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
   {
     model: "/models/model.glb",
@@ -136,6 +141,7 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
   {
     model: "/models/model.glb",
@@ -144,6 +150,7 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
   {
     model: "/models/clientModel5.glb",
@@ -152,6 +159,7 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
   {
     model: "/models/model.glb",
@@ -160,5 +168,6 @@ export const IDEA_DATA = [
     header: "Apple",
     sub: "Notes",
     date: "2023",
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
 ];

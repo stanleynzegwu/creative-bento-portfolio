@@ -19,7 +19,7 @@ const sizes = {
 
 const GpgpuflowfieldMaterial = shaderMaterial(
   {
-    uSize: 0.05,
+    uSize: 0.07,
     uResolution: new THREE.Vector2(sizes.width * sizes.pixelRatio, sizes.height * sizes.pixelRatio),
     uParticlesTexture: new THREE.Uniform(),
   },
@@ -178,7 +178,6 @@ const GPGPUFlowfieldEffect = ({ model }) => {
 const GPGPUExperience = ({ model, position }) => {
   return (
     <Canvas camera={{ fov: 40, near: 0.1, far: 200, position }}>
-      <color attach="background" args={["#222222"]} />
       <Suspense
         fallback={
           <Text color="black" anchorX="center" anchorY="middle">

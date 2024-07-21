@@ -22,7 +22,10 @@ const LeftSidebar = () => {
             <a href="/">LOGO</a>
           </div>
           {["about", "ideas", "CV"].map((item, index) => (
-            <span className="capitalize text-xl font-semibold" key={index}>
+            <span
+              className="max-w-min capitalize text-xl font-semibold hover:text-gray-400 transition-all duration-200 ease-in-out"
+              key={index}
+            >
               <a href={`/${item}`}>{item}</a>
             </span>
           ))}
@@ -43,7 +46,7 @@ const LeftSidebar = () => {
             <h3 className="text-sm text-gray-400 uppercase">web interface</h3>
             <div className="flex flex-col gap-1">
               {data.map((item, index) => (
-                <div className="group flex flex-col gap-2 w-min" key={index}>
+                <div className="group flex flex-col gap-2 w-min hover:w-max" key={index}>
                   <span className="capitalize text-sm hover:text-gray-400">{item.title}</span>
                   <div className="hidden opacity-0 group-hover:flex group-hover:opacity-100 gap-2 transition-opacity duration-500 delay-150 ease-in-out">
                     <div className=" bg-gray-200 rounded-full w-[3px] max-w-[3px] min-w-[3px]" />

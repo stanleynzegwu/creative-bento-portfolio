@@ -38,10 +38,8 @@ const IdeaBreakdown = () => {
           <h2 className="capitalize text-xl font-semibold">{idea.header}</h2>
           <span className="text-sm text-gray-400">{idea.date}</span>
         </div>
-        <p className="text-sm ">
-          A fun refresh of the existing icon for Berkeyleytime , with details of macOS.
-        </p>
-        <div className="border-[1px] border-gray-300 rounded-md p-1 h-96">
+        <p className="text-sm ">{idea.desc}</p>
+        <div className="border-[1px] border-gray-300 bg-gray-100 rounded-md h-96">
           <GPGPUExperience model={idea.model} position={[0, 0, 10]} />
         </div>
       </div>
