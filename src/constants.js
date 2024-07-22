@@ -171,3 +171,5 @@ export const IDEA_DATA = [
     desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
   },
 ];
+
+export const ABOUT_THINGS_I_LOVE_DOING = ['Traveling to new cities','Visit aesthetic cafes', 'Snowboard in japan','Ice-skating']

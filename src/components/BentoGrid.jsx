@@ -56,7 +56,7 @@ import ParticleCursorExperience from "@/canvas/ParticleCursorExperience";
 
 const BentoGrid = ({ BENTO_DATA }) => {
   const className = (index) =>
-    `flex flex-col gap-2 row-auto ${
+    `max-sm:min-h-96 flex flex-col gap-2 row-auto ${
       index === 1 || index === 3 ? "md:row-span-2" : index === 4 ? "md:row-span-2" : "md:row-span-1"
     }`;
 

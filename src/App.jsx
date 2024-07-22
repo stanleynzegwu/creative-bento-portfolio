@@ -1,8 +1,5 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from "./pages/About";
-import Home from "./pages/Home";
+import { BrowserRouter as Router } from "react-router-dom";
 import Topbar from "./components/Topbar";
-import Ideas from "./pages/IdeasList";
 import Holder from "./pages/Holder";
 
 function App() {
@@ -10,11 +7,6 @@ function App() {
     <Router>
       <main className="max-md:mt-16">
         <Topbar />
-        {/* <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/ideas" element={<Ideas />} />
-        </Routes> */}
         <Holder />
       </main>
     </Router>

@@ -1,4 +1,4 @@
-import { useRef, useEffect, Suspense } from "react";
+import { useRef, useEffect, Suspense, useMemo } from "react";
 import { Canvas, useFrame, extend, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import GUI from "lil-gui"; // Ensure lil-gui is available in your project
@@ -10,6 +10,7 @@ import gpgpuParticlesShader from "../shaders/gpgpu/particles.glsl";
 
 import { Center, OrbitControls, Preload, shaderMaterial, Text, useGLTF } from "@react-three/drei";
 import { GPUComputationRenderer } from "three/addons/misc/GPUComputationRenderer.js";
+import Loader from "@/components/Loader";
 
 const sizes = {
   width: window.innerWidth,
@@ -50,6 +51,12 @@ const GPGPUFlowfieldEffect = ({ model }) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [sizes]);
+
+  /** Handle Model scale */
+  const scaleFactor = useMemo(
+    () => Math.min(1.2, Math.max(0.5, window.innerWidth / 1280)),
+    [sizes.width]
+  );
 
   /**
    * Load model
@@ -163,7 +170,7 @@ const GPGPUFlowfieldEffect = ({ model }) => {
         }
       />
 
-      <points ref={particlesRef} geometry={particlesGeometry}>
+      <points ref={particlesRef} geometry={particlesGeometry} scale={scaleFactor}>
         <gpgpuflowfieldMaterial ref={materialRef} />
       </points>
       <OrbitControls
@@ -180,9 +187,10 @@ const GPGPUExperience = ({ model, position }) => {
     <Canvas camera={{ fov: 40, near: 0.1, far: 200, position }}>
       <Suspense
         fallback={
-          <Text color="black" anchorX="center" anchorY="middle">
-            Loading...
-          </Text>
+          // <Text color="black" anchorX="center" anchorY="middle">
+          //   Loading...
+          // </Text>
+          <Loader />
         }
       >
         <GPGPUFlowfieldEffect model={model} />
