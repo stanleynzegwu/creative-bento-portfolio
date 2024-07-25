@@ -185,17 +185,17 @@ const GPGPUFlowfieldEffect = ({ model }) => {
 const GPGPUExperience = ({ model, position }) => {
   return (
     <Canvas camera={{ fov: 40, near: 0.1, far: 200, position }}>
-      <Suspense
+      {/* <Suspense
         fallback={
           // <Text color="black" anchorX="center" anchorY="middle">
           //   Loading...
           // </Text>
           <Loader />
         }
-      >
-        <GPGPUFlowfieldEffect model={model} />
-        <Preload all />
-      </Suspense>
+      > */}
+      <GPGPUFlowfieldEffect model={model} />
+      <Preload all />
+      {/* </Suspense> */}
     </Canvas>
   );
 };

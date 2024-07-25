@@ -68,6 +68,7 @@ import Wrapper from "@/components/Wrapper";
 import Scroll from "../components/Scroll";
 import gsap from "gsap";
 import { BENTO_DATA } from "@/constants";
+import OceannExperience from "@/canvas/Ocean";
 
 const Home = () => {
   const elementRef = useRef(null);
@@ -86,6 +87,9 @@ const Home = () => {
   return (
     <>
       <div className="p-8 lg:p-12 py-10" ref={elementRef}>
+        {/* <div className="h-[100vh] w-full">
+          <OceannExperience />
+        </div> */}
         <span className="inline-block pb-6 text-xl font-semibold text-gray-400">Hello there👋</span>
         <p className="text-xl md:text-4xl lg:text-5xl font-semibold text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus

@@ -1,5 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import ParticleCursorAnimation from "./ParticleCursorAnimation";
+import { Preload } from "@react-three/drei";
 
 const ParticleCursorExperience = ({ image }) => {
   return (
@@ -14,6 +15,7 @@ const ParticleCursorExperience = ({ image }) => {
       {/* <color attach="background" args={["#181818"]} /> */}
       <color attach="background" args={["#000000"]} />
       <ParticleCursorAnimation image={image} />
+      <Preload all />
     </Canvas>
   );
 };
