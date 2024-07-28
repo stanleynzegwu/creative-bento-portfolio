@@ -119,7 +119,7 @@ const View360Experience = () => {
   ];
 
   return (
-    <Canvas camera={{ fov: 55, near: 1, far: 20000, position: [0, 0, -17] }}>
+    <Canvas camera={{ fov: 55, near: 1, far: 20000, position: [0, 0, -17], rotation: [0, 0, 0] }}>
       <ambientLight intensity={0.5} />
       <color attach="background" args={["#0f0f0f"]} />
       <OrbitControls
@@ -128,6 +128,8 @@ const View360Experience = () => {
         enableDamping={true}
         maxPolarAngle={Math.PI * 0.495}
         minPolarAngle={Math.PI / 2}
+        rotateSpeed={0.4} // Default is 1, lower values make rotation slower
+        panSpeed={0.5} //
       />
       <CameraRig axisXDivisor={12}>
         <View360 data={data} />
