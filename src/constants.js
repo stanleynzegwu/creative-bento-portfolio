@@ -173,3 +173,110 @@ export const IDEA_DATA = [
 ];
 
 export const ABOUT_THINGS_I_LOVE_DOING = ['Traveling to new cities','Visit aesthetic cafes', 'Snowboard in japan','Ice-skating']
+
+export const ABOUT_CONTENTS = {
+  about: [
+    {
+      name: 'Education',
+      image: 'https://images.unsplash.com/photo-1458134580443-fbb0743304eb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXxkbS16WEVBT2dEOHx8ZW58MHx8fHx8',
+      intro: 'Fullstack software developer with expertise in AI, machine learning and creative development. Passionate about blending creativity and Technology',
+      education: [
+        {
+          name: 'Canadian University',
+          start: '2022',
+          end: '2024',
+          major: 'Elect/Elect Engineering',
+          achievements: [
+            {
+              name: 'MVP of the year',
+              desc: 'Won the MVP of the year award because of my commitment and innovation',
+              date: '2023/03/16'
+            },
+            {
+              name: 'Voice of the People',
+              desc: 'Recognized for outstanding leadership and innovation',
+              date: '2024/03/16'
+            },
+          ]
+        },
+        {
+          name: 'University of XYZ',
+          start: '2018',
+          end: '2022',
+          major: 'Computer Science',
+          achievements: [
+            {
+              name: 'Dean’s List',
+              desc: 'Achieved Dean’s List for four consecutive years',
+              date: '2021/05/10'
+            },
+            {
+              name: 'Best Undergraduate Thesis',
+              desc: 'Awarded for excellence in research and presentation',
+              date: '2022/06/15'
+            },
+          ]
+        },
+      ]
+    },
+  ],
+  skills: [
+    {
+      name: 'Frontend',
+      image: 'https://plus.unsplash.com/premium_photo-1661320832191-8e9866f34bc9?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      technologies: ['React', 'ThreeJs', 'gsap', 'Framer-motion']
+    },
+    {
+      name: 'Backend',
+      image: 'https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      technologies: ['NodeJs', 'Express', 'NestJs']
+    },
+    {
+      name: 'DevOps',
+      image: 'https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      technologies: ['Docker', 'Kubernetes', 'AWS']
+    },
+    {
+      name: 'Design',
+      image: 'https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      technologies: ['Figma', 'Sketch', 'Adobe XD']
+    },
+    {
+      name: 'DevOps',
+      image: 'https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      technologies: ['Docker', 'Kubernetes', 'AWS']
+    },
+    {
+      name: 'Design',
+      image: 'https://plus.unsplash.com/premium_photo-1678565869434-c81195861939?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      technologies: ['Figma', 'Sketch', 'Adobe XD']
+    },
+  ],
+  interests: [
+    {
+      name: 'AI',
+      desc: 'Passionate about leveraging the power of AI to push out innovation and build the next best startup that gets over 10 million users across the globe Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit doloremque facilis voluptatibus consectetur numquam laborum corporis repudiandae sunt nobis aliquid accusantium eaque alias illo temporibus tenetur, enim minima beatae.',
+      image: 'https://plus.unsplash.com/premium_photo-1677269465314-d5d2247a0b0c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl8ZW58MHx8MHx8fDA%3D'
+    },
+    {
+      name: 'Robotics',
+      desc: 'Fascinated by robotics and how it can automate and enhance everyday life',
+      image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWl8ZW58MHx8MHx8fDA%3D'
+    },
+    {
+      name: 'Blockchain',
+      desc: 'Interested in the potential of blockchain technology to revolutionize industries',
+      image: 'https://plus.unsplash.com/premium_photo-1677269465314-d5d2247a0b0c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl8ZW58MHx8MHx8fDA%3D'
+    },
+    {
+      name: 'Photography',
+      desc: 'Exploring the world through the lens, capturing moments and stories',
+      image: 'https://plus.unsplash.com/premium_photo-1677269465314-d5d2247a0b0c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl8ZW58MHx8MHx8fDA%3D'
+    },
+    {
+      name: 'Gaming',
+      desc: 'Engaging in immersive gaming experiences and exploring new game development technologies',
+      image: 'https://plus.unsplash.com/premium_photo-1677269465314-d5d2247a0b0c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWl8ZW58MHx8MHx8fDA%3D'
+    },
+  ]
+}

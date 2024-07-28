@@ -94,4 +94,13 @@
   -webkit-backdrop-filter: blur(4px);
 }
 
+.svg-hover-effect {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.svg-hover-effect:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
 
