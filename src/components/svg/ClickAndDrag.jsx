@@ -20,7 +20,7 @@ const ClickAndDrag = () => {
       viewBox="0 0 32 32"
       xmlns="http://www.w3.org/2000/svg"
       fill="#000000"
-      className="absolute left-1/2 bottom-0 -translate-x-1/2 w-16 h-16 pointer-events-none"
+      className="absolute left-1/2 bottom-0 -translate-x-1/2 w-16 h-16 pointer-events-none z-20"
     >
       <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
       <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>

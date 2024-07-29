@@ -49,27 +49,38 @@
 
 // export default IdeaBreakdown;
 
-import GPGPUExperience from "@/canvas/GPGPUFlowfieldEffect";
 import { IDEA_DATA } from "@/constants";
 import { useNavigate, useParams } from "react-router-dom";
-import gsap from "gsap";
-import { useEffect, useRef } from "react";
 import View360Experience from "@/canvas/View360";
+import ClickAndDrag from "@/components/svg/ClickAndDrag";
 
 const IdeaBreakdown = () => {
-  const navigate = useNavigate();
-  const { id } = useParams();
-  const idea = IDEA_DATA.find((_, index) => index === +id);
-
-  // const handleGoBack = () => {
-  //   navigate(-1);
-  // };
-
   return (
-    <div className="h-screen w-screen">
+    <div className="relative h-full w-full">
+      <Button />
+      <ClickAndDrag />
       <View360Experience textureUrl={"/textures/ideas_texture2.png"} />
     </div>
   );
 };
 
 export default IdeaBreakdown;
+
+const Button = () => {
+  const navigate = useNavigate();
+  // const { id } = useParams();
+  // const idea = IDEA_DATA.find((_, index) => index === +id);
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
+
+  return (
+    <button
+      className={`absolute top-5 left-5 font-medium  text-sm bg-black text-white rounded-full px-4 py-1 transition-all duration-400 ease-in-out hover:scale-110 z-20`}
+      onClick={handleGoBack}
+    >
+      BACK
+    </button>
+  );
+};
