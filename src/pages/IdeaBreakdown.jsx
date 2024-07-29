@@ -102,7 +102,7 @@ const IdeaBreakdown = () => {
               onClick={() => setView360(true)}
             >
               <img
-                src="/textures/ideas_texture2.png"
+                src="/textures/ideas_texture1.png"
                 alt="360view_preview"
                 className="w-full h-full rounded-md"
               />
@@ -118,7 +118,7 @@ const IdeaBreakdown = () => {
             BACK
           </button>
           <ClickAndDrag />
-          <View360Experience textureUrl={"/textures/ideas_texture2.png"} />
+          <View360Experience textureUrl={"/textures/ideas_texture1.png"} />
         </div>
       )}
     </>
