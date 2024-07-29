@@ -6,11 +6,15 @@ import CameraRig from "./CameraRig";
 import "../utils";
 import useStore from "@/store/useStore";
 
-const View360 = () => {
+const View360 = ({ textureUrl }) => {
   const currentContent = useStore((state) => state.current_About_Content);
   const cylinderRef = useRef();
-  const interest_texture = useTexture(
-    currentContent ? `/textures/${currentContent}_texture.png` : `/textures/education_texture.png`
+  const view_texture = useTexture(
+    textureUrl
+      ? textureUrl
+      : currentContent
+      ? `/textures/${currentContent}_texture.png`
+      : `/textures/education_texture.png`
   );
 
   return (
@@ -19,7 +23,7 @@ const View360 = () => {
       {/**I gave a rotation to have the center to always show as the start point**/}
       <mesh ref={cylinderRef} rotation-y={Math.PI * 1}>
         <cylinderGeometry args={[13, 13, 22, 32, 1, true]} />
-        <flipMaterial map={interest_texture} side={THREE.BackSide} />
+        <flipMaterial map={view_texture} side={THREE.BackSide} />
       </mesh>
       {/* White rounded floor Light */}
       <mesh rotation={[-Math.PI / 2, 0, 0]} position-y={-10}>
@@ -46,7 +50,7 @@ const View360 = () => {
   );
 };
 
-const View360Experience = () => {
+const View360Experience = ({ textureUrl }) => {
   const isControlsEnabled = useStore((state) => state.isControlsEnabled);
 
   return (
@@ -63,7 +67,7 @@ const View360Experience = () => {
         // panSpeed={0.5}
       />
       <CameraRig axisXDivisor={12}>
-        <View360 />
+        <View360 textureUrl={textureUrl} />
       </CameraRig>
       <Environment preset="city" environmentIntensity={0.8} />
     </Canvas>
