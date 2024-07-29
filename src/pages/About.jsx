@@ -153,6 +153,7 @@ import View360Experience from "@/canvas/View360";
 import About_overlay from "@/components/About_overlay";
 import Button from "@/components/Button";
 import BackSVG from "@/components/svg/BackSVG";
+import ClickAndDrag from "@/components/svg/ClickAndDrag";
 import useStore from "@/store/useStore";
 import { Suspense } from "react";
 
@@ -183,6 +184,7 @@ const About = () => {
           <View360Experience />
           {/* <BackSVG /> */}
           <Button />
+          <ClickAndDrag />
           <About_overlay />
         </div>
       </Suspense>

@@ -165,6 +165,7 @@ export default create(
   subscribeWithSelector((set) => {
     return {
       ...initialState,
+      visibleItem: 'sphere',
       isControlsEnabled: true,
       active_About_Content: null,
       camera: null,
@@ -209,6 +210,13 @@ export default create(
         set(() => {
           return {
             camera
+          }
+        });
+      },
+      updateVisibleItem: (newItem) => {
+        set(() => {
+          return {
+            visibleItem:newItem
           }
         });
       },
