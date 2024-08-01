@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const data = [
   {
     title: "berkeleytime",
@@ -19,14 +21,14 @@ const LeftSidebar = () => {
       <div>
         <div className="p-6 py-10 flex flex-col gap-2">
           <div className="bg-gray-200 rounded-sm font-extrabold w-20 h-10 flex justify-center items-center">
-            <a href="/">LOGO</a>
+            <Link to="/">LOGO</Link>
           </div>
           {["about", "ideas", "CV"].map((item, index) => (
             <span
               className="max-w-min capitalize text-xl font-semibold hover:text-gray-400 transition-all duration-200 ease-in-out"
               key={index}
             >
-              <a href={`/${item}`}>{item}</a>
+              <Link to={`/${item}`}>{item}</Link>
             </span>
           ))}
         </div>

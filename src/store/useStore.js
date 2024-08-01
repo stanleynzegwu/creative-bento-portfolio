@@ -165,11 +165,29 @@ export default create(
   subscribeWithSelector((set) => {
     return {
       ...initialState,
+      isLoading: true,
+      dbData: {
+        projectData: null,
+        ideaData: null,
+        aboutData: null,
+      },
       visibleItem: 'sphere',
       isControlsEnabled: true,
       active_About_Content: null,
       camera: null,
       about_display_mode: false,
+      setIsLoading: (isLoading) => set({ isLoading }),
+      updateDataFromDB : (key,value) => {
+        set((state) =>
+        {
+           return {
+            dbData: {
+                ...state.dbData,
+                [key]:value
+               }
+           }
+        })
+      },
       updatCurrentAboutScene: (scene) => {
         // set((state) => ({ ...state, activeType: type }));
         set(() => {

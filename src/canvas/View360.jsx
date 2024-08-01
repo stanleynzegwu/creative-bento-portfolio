@@ -7,14 +7,20 @@ import "../utils";
 import useStore from "@/store/useStore";
 
 const View360 = ({ textureUrl }) => {
-  const currentContent = useStore((state) => state.current_About_Content);
   const cylinderRef = useRef();
+  const currentContent = useStore((state) => state.current_About_Content);
+  const aboutData = useStore((state) => state.dbData).aboutData;
+  const { aboutImgUrl, educationImgUrl, skillsImgUrl, interestImgUrl } = aboutData[0];
   const view_texture = useTexture(
     textureUrl
       ? textureUrl
-      : currentContent
-      ? `/textures/${currentContent}_texture.png`
-      : `/textures/education_texture.png`
+      : currentContent == "education"
+      ? educationImgUrl
+      : currentContent == "skills"
+      ? skillsImgUrl
+      : currentContent == "interests"
+      ? interestImgUrl
+      : aboutImgUrl
   );
 
   return (

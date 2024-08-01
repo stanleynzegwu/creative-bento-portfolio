@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Topbar = () => {
   return (
     <nav className="md:hidden fixed inset-0 h-16 p-6 md:p-8 lg:p-12 flex justify-between items-center glassmorphism z-10">
@@ -7,7 +9,7 @@ const Topbar = () => {
       <ul className="flex gap-4">
         {["about", "ideas", "CV"].map((item, index) => (
           <li className="capitalize text-lg font-semibold" key={index}>
-            <a href={`/${item}`}>{item}</a>
+            <Link to={`/${item}`}>{item}</Link>
           </li>
         ))}
       </ul>

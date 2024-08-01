@@ -1,11 +1,15 @@
 import BentoGrid from "@/components/BentoGrid";
 import { IDEA_DATA } from "@/constants";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import gsap from "gsap";
+import useStore from "@/store/useStore";
+import { useGSAP } from "@gsap/react";
 
 const IdeasList = () => {
   const elementRef = useRef(null);
-  useEffect(() => {
+  const ideaData = useStore((state) => state.dbData).ideaData;
+
+  useGSAP(() => {
     // Animation setup
     const animation = gsap.fromTo(
       elementRef.current,
@@ -30,7 +34,7 @@ const IdeasList = () => {
         </p>
       </div>
       <div className="w-full border-b-[1px] border-gray-200" />
-      <BentoGrid BENTO_DATA={IDEA_DATA} />
+      <BentoGrid BENTO_DATA={ideaData} />
     </div>
   );
 };
