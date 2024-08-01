@@ -25,11 +25,13 @@ const setIsLoading = useStore((state) => state.setIsLoading);
         const aboutResponseData = await request.get('/about')
         updateDataFromDB('aboutData', aboutResponseData.data)
 
+        const ideaView360DataResponseData = await request.get('/idea-view360')
+        updateDataFromDB('ideaView360Data', ideaView360DataResponseData.data)
+
       } catch (error) {
         console.error('Error fetching data:', error);
       } finally {
         // Set loading state to false after fetch is complete
-    
         setIsLoading(false);
       }
     };

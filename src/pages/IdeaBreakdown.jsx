@@ -1,12 +1,16 @@
-// import GPGPUExperience from "@/canvas/GPGPUFlowfieldEffect";
 // import { IDEA_DATA } from "@/constants";
 // import { useNavigate, useParams } from "react-router-dom";
 // import gsap from "gsap";
-// import { useEffect, useRef } from "react";
+// import { useRef, useState } from "react";
+// import View360Experience from "@/canvas/View360";
+// import ClickAndDrag from "@/components/svg/ClickAndDrag";
+// import { useGSAP } from "@gsap/react";
 
 // const IdeaBreakdown = () => {
+//   const [isView360, setView360] = useState(false);
 //   const navigate = useNavigate();
 //   const { id } = useParams();
+
 //   const idea = IDEA_DATA.find((_, index) => index === +id);
 
 //   const handleGoBack = () => {
@@ -14,7 +18,7 @@
 //   };
 
 //   const elementRef = useRef(null);
-//   useEffect(() => {
+//   useGSAP(() => {
 //     // Animation setup
 //     const animation = gsap.fromTo(
 //       elementRef.current,
@@ -28,48 +32,69 @@
 //   }, []);
 
 //   return (
-//     <div className="p-8 lg:p-12 py-10" ref={elementRef}>
-//       <div className="text-sm text-gray-400 cursor-pointer mb-14" onClick={handleGoBack}>
-//         Back
-//       </div>
+//     <>
+//       {!isView360 ? (
+//         <div className="p-8 lg:p-12 py-10" ref={elementRef}>
+//           <div className="text-sm text-gray-400 cursor-pointer mb-14" onClick={handleGoBack}>
+//             Back
+//           </div>
 
-//       <div className="flex flex-col gap-8">
-//         <div className="flex justify-between ">
-//           <h2 className="capitalize text-xl font-semibold">{idea.header}</h2>
-//           <span className="text-sm text-gray-400">{idea.date}</span>
+//           <div className="flex flex-col gap-8">
+//             <div className="flex justify-between ">
+//               <h2 className="capitalize text-xl font-semibold">{idea.header}</h2>
+//               <span className="text-sm text-gray-400">{idea.date}</span>
+//             </div>
+//             <p className="text-sm ">{idea.desc}</p>
+//             <div
+//               className="border-[1px] border-gray-300 bg-gray-100 rounded-md h-96 cursor-pointer"
+//               onClick={() => setView360(true)}
+//             >
+//               <img
+//                 src="/textures/ideas_texture1.png"
+//                 alt="360view_preview"
+//                 className="w-full h-full rounded-md"
+//               />
+//             </div>
+//           </div>
 //         </div>
-//         <p className="text-sm ">{idea.desc}</p>
-//         <div className="border-[1px] border-gray-300 bg-gray-100 rounded-md h-96">
-//           <GPGPUExperience model={idea.model} position={[0, 0, 10]} />
+//       ) : (
+//         <div className="relative h-full w-full">
+//           <button
+//             className={`absolute top-5 left-5 font-medium  text-sm bg-black text-white rounded-full px-4 py-1 transition-all duration-400 ease-in-out hover:scale-110 z-20`}
+//             onClick={() => setView360(false)}
+//           >
+//             BACK
+//           </button>
+//           <ClickAndDrag />
+//           <View360Experience textureUrl={"/textures/ideas_texture1.png"} />
 //         </div>
-//       </div>
-//     </div>
+//       )}
+//     </>
 //   );
 // };
 
 // export default IdeaBreakdown;
 
-/////////////////////////
-
-import { IDEA_DATA } from "@/constants";
 import { useNavigate, useParams } from "react-router-dom";
 import gsap from "gsap";
 import { useRef, useState } from "react";
 import View360Experience from "@/canvas/View360";
 import ClickAndDrag from "@/components/svg/ClickAndDrag";
 import { useGSAP } from "@gsap/react";
+import useStore from "@/store/useStore";
 
 const IdeaBreakdown = () => {
+  const { id } = useParams();
+  const { ideaData, ideaView360Data } = useStore((state) => state.dbData);
+  const selectedIdea = ideaData?.find((data) => data._id === id);
   const [isView360, setView360] = useState(false);
   const navigate = useNavigate();
-  const { id } = useParams();
-  const idea = IDEA_DATA.find((_, index) => index === +id);
+  const elementRef = useRef(null);
 
   const handleGoBack = () => {
     navigate(-1);
   };
 
-  const elementRef = useRef(null);
   useGSAP(() => {
     // Animation setup
     const animation = gsap.fromTo(
@@ -93,16 +118,16 @@ const IdeaBreakdown = () => {
 
           <div className="flex flex-col gap-8">
             <div className="flex justify-between ">
-              <h2 className="capitalize text-xl font-semibold">{idea.header}</h2>
-              <span className="text-sm text-gray-400">{idea.date}</span>
+              <h2 className="capitalize text-xl font-semibold">{selectedIdea.header}</h2>
+              <span className="text-sm text-gray-400">{selectedIdea.date}</span>
             </div>
-            <p className="text-sm ">{idea.desc}</p>
+            <p className="text-sm ">{selectedIdea.description}</p>
             <div
               className="border-[1px] border-gray-300 bg-gray-100 rounded-md h-96 cursor-pointer"
               onClick={() => setView360(true)}
             >
               <img
-                src="/textures/ideas_texture1.png"
+                src={ideaView360Data[0].imgUrl}
                 alt="360view_preview"
                 className="w-full h-full rounded-md"
               />
@@ -118,7 +143,7 @@ const IdeaBreakdown = () => {
             BACK
           </button>
           <ClickAndDrag />
-          <View360Experience textureUrl={"/textures/ideas_texture1.png"} />
+          <View360Experience textureUrl={ideaView360Data[0].imgUrl} />
         </div>
       )}
     </>

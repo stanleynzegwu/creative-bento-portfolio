@@ -60,31 +60,31 @@ export const BENTO_DATA = [
 export const INTERDISCIPLINARY_DATA = [
   {
     name:'spatial constructs',
-    imgPath:'/images/100devs.jpeg'
+    imgPath:'/images/vr-glasses.png'
   },
   {
     name:'brass park',
-    imgPath:'/images/womantree2.jpg'
+    imgPath:'/images/vr-glasses.png'
   },
   {
     name:'crafts',
-    imgPath:'/images/100devs.jpeg'
+    imgPath:'/images/vr-glasses.png'
   },
   {
     name:'modular workspaces',
-    imgPath:'/images/100devs.jpeg'
+    imgPath:'/images/vr-glasses.png'
   },
   {
     name:'draw',
-    imgPath:'/images/100devs.jpeg'
+    imgPath:'/images/vr-glasses.png'
   },
   {
     name:'water color',
-    imgPath:'/images/womantree2.jpg'
+    imgPath:'/images/vr-glasses.png'
   },
   {
     name:'sleepy cat books',
-    imgPath:'/images/100devs.jpeg'
+    imgPath:'/images/vr-glasses.png'
   },
 ]
 

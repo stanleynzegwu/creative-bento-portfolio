@@ -154,7 +154,7 @@ const BentoGrid = ({ BENTO_DATA }) => {
                 item.model ? "cursor-grab" : ""
               }`}
             >
-              <Link to={`/ideas/${index}`} className="block w-full h-full">
+              <Link to={`/ideas/${item._id}`} className="block w-full h-full">
                 {content}
               </Link>
             </div>
