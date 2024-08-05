@@ -142,11 +142,12 @@ const Breakdown = () => {
               />
             </div>
             <h1 className="capitalize text-center font-bold text-xl">{selectedData.articleH1}</h1>
-            <div
+            {/* <div
               className={`flex flex-col lg:${
                 selectedDataIndex % 2 ? "flex-row" : "flex-row-reverse"
-              }  lg:items-center gap-8`}
-            >
+              } lg:items-center gap-8`}
+            > */}
+            <div className={`flex flex-col lg:flex-row lg:items-center gap-8`}>
               <p className="lg:w-1/2 my-auto">{selectedData.articleLeft}</p>
               {selectedData.articleRightMediaType === "image" ? (
                 <img
