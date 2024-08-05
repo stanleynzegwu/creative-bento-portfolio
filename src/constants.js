@@ -90,86 +90,171 @@ export const INTERDISCIPLINARY_DATA = [
 
 export const IDEA_DATA = [
   {
-    model: "/models/model.glb",
-    video: "/video/video3.mp4",
-    cameraPosition: [0, 0, 6],
+    date:'2024-08-01',
+    header:'AI',
+    subheader: 'First AI',
+    mediaType: 'video',
+    mediaUrl: "/video/video3.mp4",
+    texture360: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
     header: "Apple",
     sub: "Notes",
     date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS.",
+    articleH1: "Artificial Intelligence: style shift",
+    articleLeft: 'lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf,lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhflorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf',
+    articleRightMedia: '/textures/picture-1.png',
+    articleH2: 'Part 1: lorem ipsum bvbvb hhghg refs ffdfdf hfhfh',
+    visualCenterMediaType: "image",
+    visualCenterUrl: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
+    articleCenter: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati, Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati',
+    articleSmall: 'for converting km/h to mph i used',
+    articleCode: 
+    `
+      def hello_world(): 
+          print("Hello, world!") 
+      hello_world()
+    `
   },
   {
-    model: "/models/clientModel5.glb",
-    video: "/video/video1.mp4",
-    cameraPosition: [0, 0, 6],
+    date:'2024-08-01',
+    header:'AI',
+    subheader: 'First AI',
+    mediaType: 'image',
+    mediaUrl: '/images/articleCode.png',
+    texture360: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
     header: "Apple",
     sub: "Notes",
     date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS.",
+    articleH1: "Artificial Intelligence: style shift",
+    articleLeft: 'lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf,lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhflorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf',
+    articleRightMedia:'/textures/picture-1.png',
+    articleH2: 'Part 1: lorem ipsum bvbvb hhghg refs ffdfdf hfhfh',
+    visualCenterMediaType: "image",
+    visualCenterUrl: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
+    articleCenter: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati, Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati',
+    articleSmall: 'for converting km/h to mph i used',
+    articleCode: 
+    `
+      def hello_world(): 
+          print("Hello, world!") 
+      hello_world()
+    `
   },
   {
-    model: "/models/clientModel5.glb",
-    video: "/video/video1.mp4",
-    cameraPosition: [0, 0, 6],
+    date:'2024-08-01',
+    header:'AI',
+    subheader: 'First AI',
+    mediaType: 'texture',
+    mediaUrl: "/textures/picture-1.png",
+    texture360: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
     header: "Apple",
     sub: "Notes",
     date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS.",
+    articleH1: "Artificial Intelligence: style shift",
+    articleLeft: 'lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf,lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhflorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf',
+    articleRightMedia: '/textures/picture-1.png',
+    articleH2: 'Part 1: lorem ipsum bvbvb hhghg refs ffdfdf hfhfh',
+    visualCenterMediaType: "video",
+    visualCenterUrl: "/video/video3.mp4",
+    articleCenter: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati, Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati',
+    articleSmall: 'for converting km/h to mph i used',
+    articleCode: 
+    `
+      def hello_world(): 
+          print("Hello, world!") 
+      hello_world()
+    `
   },
   {
-    model: "/models/model.glb",
-    video: "/video/video3.mp4",
-    cameraPosition: [0, 0, 6],
+    date:'2024-08-01',
+    header:'AI',
+    subheader: 'First AI',
+    mediaType: 'video',
+    mediaUrl: "/video/video3.mp4",
+    texture360: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
     header: "Apple",
     sub: "Notes",
     date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS.",
+    articleH1: "Artificial Intelligence: style shift",
+    articleLeft: 'lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf,lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhflorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf',
+    articleRightMedia: '/textures/picture-1.png',
+    articleH2: 'Part 1: lorem ipsum bvbvb hhghg refs ffdfdf hfhfh',
+    visualCenterMediaType: "image",
+    visualCenterUrl: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
+    articleCenter: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati, Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati',
+    articleSmall: 'for converting km/h to mph i used',
+    articleCode: 
+    `
+      def hello_world(): 
+          print("Hello, world!") 
+      hello_world()
+    `
   },
   {
-    model: "/models/model.glb",
-    video: "/video/video3.mp4",
-    cameraPosition: [0, 0, 6],
+    date:'2024-08-01',
+    header:'AI',
+    subheader: 'First AI',
+    mediaType: 'texture',
+    mediaUrl: "/textures/picture-3.png",
+    texture360: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
     header: "Apple",
     sub: "Notes",
     date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS.",
+    articleH1: "Artificial Intelligence: style shift",
+    articleLeft: 'lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf,lorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhflorem iphhfhhg jfffffff jfffffffff bdgdgd tgggggggggs sfffffffff dfhfhg hhfffff fjff sertey ewryue ehdfhff sgsgdgdg hfhffhf jsjsjdjrfff b  fbvnvnv v vnvnvnvv gdgfgf fffs vgbfbf bbfbfbf cbhf hnfhfhfh fhhf',
+    articleRightMedia: '/textures/picture-1.png',
+    articleH2: 'Part 1: lorem ipsum bvbvb hhghg refs ffdfdf hfhfh',
+    visualCenterMediaType: "image",
+    visualCenterUrl: 'https://firebasestorage.googleapis.com/v0/b/m-kim-portfolio.appspot.com/o/textures%2Finterests_texture.png?alt=media&token=9358ef35-23b8-4532-8b4e-54604e0a45af',
+    articleCenter: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati, Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati',
+    articleSmall: 'for converting km/h to mph i used',
+    articleCode: 
+    `
+      def hello_world(): 
+          print("Hello, world!") 
+      hello_world()
+    `
   },
-  {
-    model: "/models/model.glb",
-    video: "/video/video3.mp4",
-    cameraPosition: [0, 0, 6],
-    header: "Apple",
-    sub: "Notes",
-    date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
-  },
-  {
-    model: "/models/model.glb",
-    video: "/video/video3.mp4",
-    cameraPosition: [0, 0, 6],
-    header: "Apple",
-    sub: "Notes",
-    date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
-  },
-  {
-    model: "/models/clientModel5.glb",
-    video: "/video/video3.mp4",
-    cameraPosition: [0, 0, 6],
-    header: "Apple",
-    sub: "Notes",
-    date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
-  },
-  {
-    model: "/models/model.glb",
-    video: "/video/video3.mp4",
-    cameraPosition: [0, 0, 6],
-    header: "Apple",
-    sub: "Notes",
-    date: "2023",
-    desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
-  },
+  // {
+  //   model: "/models/model.glb",
+  //   video: "/video/video3.mp4",
+  //   cameraPosition: [0, 0, 6],
+  //   header: "Apple",
+  //   sub: "Notes",
+  //   date: "2023",
+  //   desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+  // },
+  // {
+  //   model: "/models/model.glb",
+  //   video: "/video/video3.mp4",
+  //   cameraPosition: [0, 0, 6],
+  //   header: "Apple",
+  //   sub: "Notes",
+  //   date: "2023",
+  //   desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+  // },
+  // {
+  //   model: "/models/clientModel5.glb",
+  //   video: "/video/video3.mp4",
+  //   cameraPosition: [0, 0, 6],
+  //   header: "Apple",
+  //   sub: "Notes",
+  //   date: "2023",
+  //   desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+  // },
+  // {
+  //   model: "/models/model.glb",
+  //   video: "/video/video3.mp4",
+  //   cameraPosition: [0, 0, 6],
+  //   header: "Apple",
+  //   sub: "Notes",
+  //   date: "2023",
+  //   desc: "A fun refresh of the existing icon for Berkeyleytime , with details of macOS."
+  // },
 ];
 
 export const ABOUT_THINGS_I_LOVE_DOING = ['Traveling to new cities','Visit aesthetic cafes', 'Snowboard in japan','Ice-skating']

@@ -6,23 +6,23 @@ import { gsap, Power2 } from "gsap";
 import { useEffect } from "react";
 
 const data = [
-  { name: "education", className: "top-0 left-10", modelName: "box" },
-  { name: "interests", className: "top-0 right-10", modelName: "sphere" },
-  { name: "about", className: "bottom-0 left-0", modelName: "torus" },
-  { name: "skills", className: "bottom-0 right-0", modelName: "torusKnot" },
+  { name: "education", className: "top-0 left-10", modelName: "educationModel" },
+  { name: "interests", className: "top-0 right-10", modelName: "interestModel" },
+  { name: "about", className: "bottom-0 left-0", modelName: "aboutModel" },
+  { name: "skills", className: "bottom-0 right-0", modelName: "skillModel" },
 ];
 const InfoOverlay = ({ visibleItem, setVisibleItem }) => {
   const camera = useThree((state) => state.camera);
   const controls = useThree((state) => state.controls);
   const updateCamera = useStore((state) => state.updateCamera);
 
-  useEffect(() => {
-    updateCamera(camera);
-  }, []);
-
   const currentScene = useStore((state) => state.current_About_Scene);
   const updatCurrentAboutScene = useStore((state) => state.updatCurrentAboutScene);
   const updatCurrentAboutContent = useStore((state) => state.updatCurrentAboutContent);
+
+  useEffect(() => {
+    updateCamera(camera);
+  }, []);
 
   return (
     <Html zIndexRange={[10, 0]} center={true} className="overlay hidden opacity-0">

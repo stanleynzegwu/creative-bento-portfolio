@@ -159,7 +159,7 @@ import CameraRig from "./CameraRig";
 extend({ Water });
 
 function Ocean() {
-  const [visibleItem, setVisibleItem] = useState("sphere");
+  const [visibleItem, setVisibleItem] = useState(null);
   const ref = useRef();
   const gl = useThree((state) => state.gl);
   const camera = useThree((state) => state.camera);

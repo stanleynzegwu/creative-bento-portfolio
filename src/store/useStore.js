@@ -170,9 +170,8 @@ export default create(
         projectData: null,
         ideaData: null,
         aboutData: null,
-        ideaView360Data: null
       },
-      visibleItem: 'sphere',
+      visibleItem: null,
       isControlsEnabled: true,
       active_About_Content: null,
       camera: null,

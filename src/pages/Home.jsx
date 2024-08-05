@@ -61,6 +61,55 @@
 
 // export default Home;
 
+// import React, { useRef } from "react";
+// import BentoGrid from "@/components/BentoGrid";
+// import Footer from "@/components/Footer";
+// import Wrapper from "@/components/Wrapper";
+// import Scroll from "../components/Scroll";
+// import gsap from "gsap";
+// import useStore from "@/store/useStore";
+// import { useGSAP } from "@gsap/react";
+
+// const Home = () => {
+//   const elementRef = useRef(null);
+//   const projectData = useStore((state) => state.dbData).projectData;
+//   useGSAP(() => {
+//     // Animation setup
+//     const animation = gsap.fromTo(
+//       elementRef.current,
+//       { y: "20%", opacity: 0 },
+//       { y: "0%", opacity: 1, duration: 0.5, ease: "power2.out" }
+//     );
+//     // Cleanup function to stop animation on component unmount
+//     return () => {
+//       animation.kill();
+//     };
+//   }, []);
+//   return (
+//     <>
+//       <div className="p-8 lg:p-12 py-10" ref={elementRef}>
+//         <span className="inline-block pb-6 text-xl font-semibold text-gray-400">Hello there👋</span>
+//         <p className="text-xl md:text-4xl lg:text-5xl font-semibold text-gray-500">
+//           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus
+//           excepturi voluptatem dolorem consectetur. Assumenda, dolores asperiores eaque obcaecati,
+//           amet cumque quisquam quae, quod illo rerum a temporibus ex?
+//         </p>
+//       </div>
+//       <Wrapper name={"craft"}>
+//         <div className="p-6 md:p-8 lg:p-12">
+//           <BentoGrid BENTO_DATA={projectData} />
+//         </div>
+//       </Wrapper>
+//       <Wrapper name={"interdisciplinary"}>
+//         <Scroll />
+//       </Wrapper>
+//       <Footer />
+//     </>
+//   );
+// };
+
+// export default Home;
+
 import React, { useRef } from "react";
 import BentoGrid from "@/components/BentoGrid";
 import Footer from "@/components/Footer";
@@ -69,6 +118,7 @@ import Scroll from "../components/Scroll";
 import gsap from "gsap";
 import useStore from "@/store/useStore";
 import { useGSAP } from "@gsap/react";
+import { IDEA_DATA } from "@/constants";
 
 const Home = () => {
   const elementRef = useRef(null);
@@ -97,7 +147,7 @@ const Home = () => {
       </div>
       <Wrapper name={"craft"}>
         <div className="p-6 md:p-8 lg:p-12">
-          <BentoGrid BENTO_DATA={projectData} />
+          <BentoGrid route={"project"} BENTO_DATA={projectData} />
         </div>
       </Wrapper>
       <Wrapper name={"interdisciplinary"}>
