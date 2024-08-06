@@ -108,13 +108,30 @@
 /* ////////////////////// */
 
 .signature path {
-  stroke: gold;
-  /* stroke-width: 3px; */
-  /* fill: none; */
+  stroke: rgb(141, 122, 12);
+  stroke-width: 6px;
+  fill: none;
   stroke-dasharray: 4000; /* Total length of the path */
   stroke-dashoffset: 4000; /* Initial offset to hide the path */
-  animation: draw 8s linear forwards; /* Animation with specified duration */
-  /* animation-delay: 250ms; */
+  /* animation: draw 8s linear forwards 5s;  */
+  /* animation: draw 8s linear forwards;  */
+}
+
+
+.path1 {
+  animation: draw 5s linear forwards;
+}
+.path2 {
+  animation: draw 5s linear forwards 2.7s;
+}
+ .path3 {
+  animation: draw 5s linear forwards 4s;
+}
+.path4 {
+  animation: draw 5s linear forwards 5.8s;
+}
+.path5 {
+  animation: draw 5s linear forwards 7s;
 }
 
 @keyframes draw {

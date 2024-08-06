@@ -166,6 +166,7 @@ export default create(
     return {
       ...initialState,
       isLoading: true,
+      dataProgress: 0,
       dbData: {
         projectData: null,
         ideaData: null,
@@ -177,6 +178,7 @@ export default create(
       camera: null,
       about_display_mode: false,
       setIsLoading: (isLoading) => set({ isLoading }),
+      setDataProgress: (progress) => set({ dataProgress: progress }),
       updateDataFromDB : (key,value) => {
         set((state) =>
         {

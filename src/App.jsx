@@ -6,8 +6,12 @@ import LoadingScreen from "./components/LoadingScreen";
 import useStore from "./store/useStore";
 
 function App() {
-  const isLoading = useStore((state) => state.isLoading);
   useFetchData(); // Call the custom hook to fetch data
+  const isLoading = useStore((state) => state.isLoading);
+
+  const dataProgress = useStore((state) => state.dataProgress);
+  // console.log(dataProgress);
+
   return (
     <Router>
       {isLoading ? (
