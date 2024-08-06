@@ -3,7 +3,7 @@ import SignatureSVG from "./svg/SignatureSvg";
 
 const LoadingScreen = () => {
   const progress = useProgress((state) => state.progress);
-  console.log(progress);
+  // console.log(progress);
   return (
     <div className="w-screen h-screen bg-black flex flex-col justify-center items-center text-white">
       {/* <div className="relative w-2/3 lg:w-1/3 h-auto ">

@@ -75,7 +75,7 @@ const Breakdown = () => {
                 <img
                   src={selectedData.articleRightMediaUrl}
                   alt="artcleImg"
-                  className="lg:w-1/2 h-80 rounded-md"
+                  className="lg:w-1/2 h-full rounded-md"
                 />
               ) : (
                 selectedData.articleRightMediaType === "video" && (
@@ -85,7 +85,7 @@ const Breakdown = () => {
                     muted
                     loop
                     alt="artcleImg"
-                    className="lg:w-1/2 h-80 rounded-md"
+                    className="lg:w-1/2 h-full rounded-md"
                   />
                 )
               )}
@@ -96,7 +96,7 @@ const Breakdown = () => {
               <img
                 src={selectedData.visualCenterMediaUrl}
                 alt="visual-center"
-                className="h-96 rounded-md"
+                className="h-full rounded-md"
               />
             ) : (
               <video
@@ -105,7 +105,7 @@ const Breakdown = () => {
                 muted
                 loop
                 alt="visual-center"
-                className="h-96 rounded-md"
+                className="h-full rounded-md"
               />
             )}
             <p className="">{selectedData.articleCenter}</p>
