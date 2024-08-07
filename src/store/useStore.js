@@ -165,6 +165,7 @@ export default create(
   subscribeWithSelector((set) => {
     return {
       ...initialState,
+      assetLoaded: false,
       isLoading: true,
       dataProgress: 0,
       dbData: {
@@ -177,6 +178,7 @@ export default create(
       active_About_Content: null,
       camera: null,
       about_display_mode: false,
+      setAssetLoaded:(loaded) => set({ assetLoaded:loaded }),
       setIsLoading: (isLoading) => set({ isLoading }),
       setDataProgress: (progress) => set({ dataProgress: progress }),
       updateDataFromDB : (key,value) => {

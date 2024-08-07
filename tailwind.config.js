@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'gupter': ['Gupter', 'sans-serif'],
+      },
       backgroundImage: {
         'radial-gradient': 'radial-gradient(80% 80% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%)',
       },

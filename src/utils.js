@@ -1,5 +1,23 @@
 import gsap from "gsap";
 
+export const transitionOutLoadingScreen = () => {
+  const page = document.getElementById("loading_screen");
+  if (!page) return;
+
+  const timeline = gsap.timeline({
+    onComplete: () => {
+      page.style.display = "none"; // Hide the element after the animation completes
+    }
+  });
+
+  timeline.to(page, {
+    opacity: 0,
+    duration: 2, // Adjust duration as needed
+    ease: "power2.inOut"
+  });
+};
+
+
 export const animateToObject = (camera, controls) => {
   //     controls.enabled = false;
   const timeline = gsap.timeline();

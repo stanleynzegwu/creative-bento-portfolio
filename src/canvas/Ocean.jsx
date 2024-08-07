@@ -157,6 +157,7 @@ import InfoOverlay from "@/components/InfoOverlay";
 import CameraRig from "./CameraRig";
 
 extend({ Water });
+useTexture.preload("/textures/waternormals.jpg");
 
 function Ocean() {
   const [visibleItem, setVisibleItem] = useState(null);

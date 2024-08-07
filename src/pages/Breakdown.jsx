@@ -6,6 +6,7 @@ import ClickAndDrag from "@/components/svg/ClickAndDrag";
 import { useGSAP } from "@gsap/react";
 import CodeBlock from "../components/CodeBlock";
 import useStore from "@/store/useStore";
+import Topbar from "@/components/Topbar";
 
 const Breakdown = () => {
   const [isView360, setView360] = useState(false);
@@ -42,77 +43,80 @@ const Breakdown = () => {
   return (
     <>
       {!isView360 ? (
-        <div className="p-8 lg:p-12 py-10 whitespace-pre-wrap" ref={elementRef}>
-          <div className="text-sm text-gray-400 cursor-pointer mb-14" onClick={handleGoBack}>
-            Back
-          </div>
+        <>
+          <Topbar />
+          <div className="max-md:mt-16 p-8 lg:p-12 py-10 whitespace-pre-wrap" ref={elementRef}>
+            <div className="text-sm text-gray-400 cursor-pointer mb-14" onClick={handleGoBack}>
+              Back
+            </div>
 
-          <div className="flex flex-col gap-8">
-            <div className="flex justify-between ">
-              <h2 className="capitalize text-xl font-semibold">{selectedData.header}</h2>
-              <span className="text-sm text-gray-400">{selectedData.date}</span>
-            </div>
-            <p className="text-sm ">{selectedData.description}</p>
-            <div
-              className="border-[1px] border-gray-300 bg-gray-100 rounded-md h-96 cursor-pointer"
-              onClick={() => setView360(true)}
-            >
-              <img
-                src={selectedData.texture360Url}
-                alt="360view_preview"
-                className="w-full h-full rounded-md"
-              />
-            </div>
-            <h1 className="capitalize text-center font-bold text-xl">{selectedData.articleH1}</h1>
-            {/* <div
+            <div className="flex flex-col gap-8">
+              <div className="flex justify-between ">
+                <h2 className="capitalize text-xl font-semibold">{selectedData.header}</h2>
+                <span className="text-sm text-gray-400">{selectedData.date}</span>
+              </div>
+              <p className="text-sm ">{selectedData.description}</p>
+              <div
+                className="border-[1px] border-gray-300 bg-gray-100 rounded-md h-96 cursor-pointer"
+                onClick={() => setView360(true)}
+              >
+                <img
+                  src={selectedData.texture360Url}
+                  alt="360view_preview"
+                  className="w-full h-full rounded-md"
+                />
+              </div>
+              <h1 className="capitalize text-center font-bold text-xl">{selectedData.articleH1}</h1>
+              {/* <div
               className={`flex flex-col lg:${
                 selectedDataIndex % 2 ? "flex-row" : "flex-row-reverse"
               } lg:items-center gap-8`}
             > */}
-            <div className={`flex flex-col lg:flex-row lg:items-center gap-8`}>
-              <p className="lg:w-1/2 my-auto">{selectedData.articleLeft}</p>
-              {selectedData.articleRightMediaType === "image" ? (
-                <img
-                  src={selectedData.articleRightMediaUrl}
-                  alt="artcleImg"
-                  className="lg:w-1/2 h-full rounded-md"
-                />
-              ) : (
-                selectedData.articleRightMediaType === "video" && (
-                  <video
+              <div className={`flex flex-col lg:flex-row lg:items-center gap-8`}>
+                <p className="lg:w-1/2 my-auto">{selectedData.articleLeft}</p>
+                {selectedData.articleRightMediaType === "image" ? (
+                  <img
                     src={selectedData.articleRightMediaUrl}
-                    autoPlay
-                    muted
-                    loop
                     alt="artcleImg"
                     className="lg:w-1/2 h-full rounded-md"
                   />
-                )
-              )}
-            </div>
-            <h1 className="capitalize text-center font-bold text-xl">{selectedData.articleH2}</h1>
+                ) : (
+                  selectedData.articleRightMediaType === "video" && (
+                    <video
+                      src={selectedData.articleRightMediaUrl}
+                      autoPlay
+                      muted
+                      loop
+                      alt="artcleImg"
+                      className="lg:w-1/2 h-full rounded-md"
+                    />
+                  )
+                )}
+              </div>
+              <h1 className="capitalize text-center font-bold text-xl">{selectedData.articleH2}</h1>
 
-            {selectedData.visualCenterMediaType === "image" ? (
-              <img
-                src={selectedData.visualCenterMediaUrl}
-                alt="visual-center"
-                className="h-full rounded-md"
-              />
-            ) : (
-              <video
-                src={selectedData.visualCenterMediaUrl}
-                autoPlay
-                muted
-                loop
-                alt="visual-center"
-                className="h-full rounded-md"
-              />
-            )}
-            <p className="">{selectedData.articleCenter}</p>
-            <span className="text-sm">{selectedData.articleSmall}</span>
-            <CodeBlock code={selectedData.articleCode} />
+              {selectedData.visualCenterMediaType === "image" ? (
+                <img
+                  src={selectedData.visualCenterMediaUrl}
+                  alt="visual-center"
+                  className="h-full rounded-md"
+                />
+              ) : (
+                <video
+                  src={selectedData.visualCenterMediaUrl}
+                  autoPlay
+                  muted
+                  loop
+                  alt="visual-center"
+                  className="h-full rounded-md"
+                />
+              )}
+              <p className="">{selectedData.articleCenter}</p>
+              <span className="text-sm">{selectedData.articleSmall}</span>
+              <CodeBlock code={selectedData.articleCode} />
+            </div>
           </div>
-        </div>
+        </>
       ) : (
         <div className="relative h-full w-full">
           <button

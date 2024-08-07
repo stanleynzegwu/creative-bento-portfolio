@@ -119,6 +119,7 @@ import gsap from "gsap";
 import useStore from "@/store/useStore";
 import { useGSAP } from "@gsap/react";
 import { IDEA_DATA } from "@/constants";
+import Topbar from "@/components/Topbar";
 
 const Home = () => {
   const elementRef = useRef(null);
@@ -137,7 +138,8 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className="p-8 lg:p-12 py-10" ref={elementRef}>
+      <Topbar />
+      <div className="max-md:mt-16 p-8 lg:p-12 py-10" ref={elementRef}>
         <span className="inline-block pb-6 text-xl font-semibold text-gray-400">Hello there👋</span>
         <p className="text-xl md:text-4xl lg:text-5xl font-semibold text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus deleniti natus
